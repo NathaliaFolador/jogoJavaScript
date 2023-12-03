@@ -1,0 +1,30 @@
+<meta charset=""utf-8">
+
+<script>
+
+      function pularLinha() {
+         document.write("<br>" + "<br>");
+      }
+      function mostrar(frase) {
+         document.write(frase);
+         pularLinha();
+      }
+   var numeroPensado = 5; //também podemos usar o código Math.round(Math.random() * 10);   para deixar o computador escolher o númro 
+var tentativas = 1
+
+   while (tentativas <= 3) {
+   
+      var chute = parseInt(prompt("Digite um número"));
+
+      if (chute == numeroPensado) {
+         alert("Parabéns!!!  Você acertou!!!!"); 
+
+break; }         
+
+      else {
+   alert("Que pena!!! Você errou!!!") }
+
+   tentativas++; }
+
+   alert("Fim");
+   </script>

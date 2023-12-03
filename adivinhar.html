@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h1>Adivinhe o meu segredo</h1>
+<br>
+<h2>Digite um número</h2>
+<input />
+<br>
+<button>Verificar resposta</button>
+
+<script>
+      var segredo = 10;
+
+      var input = document.querySelector("input"); //para inserir aquilo que está no mundo HTML na variável input. 
+
+      function verifica() {
+
+         if (input.value == segredo) {
+
+            alert("Parabéns! Você ACERTOU!");
+         } else {
+
+            alert("Que pena! Você ERROU!!!!!!!!");
+         }
+         input.value = "";
+         input.focus();
+      }
+
+      var button = document.querySelector("button"); //para inserir aquilo que está no mundo HTML na variável button.
+
+      button.onclick = verifica;
+
+
+</script>

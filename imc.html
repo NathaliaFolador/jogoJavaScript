@@ -1,0 +1,63 @@
+<meta charset=""utf-8">
+
+<h1>Calcular IMC</h1>
+<br>
+<script>
+   function pularLinha() {
+      document.write("<br>"+  "<br>");
+   }
+function mostrar(frase) {
+   document.write(frase);
+      pularLinha();
+}
+var peso1 = 85;
+var altura1 = 1.73;
+var imc1 = peso1 / (altura1 * altura1);
+
+mostrar("O valor do IMC 1 é: " + imc1);
+
+var peso2 = 72;
+var altura2 = 1.65;
+var imc2 = peso2 / (altura2 * altura2);
+
+mostrar("O valor do IMC 2 é: " + imc2);
+
+//calcular IMC utilizando uma função para ela
+   function calcularImc(peso, altura) {
+      var imc = peso / (altura * altura);
+          return imc;
+   }
+   var imc1 = calcularImc(85, 1.73);
+   var imc2 = calcularImc(72, 1.65);
+var imcTotal = imc1 + imc2;
+
+mostrar("A soma total dos IMC é: " + imcTotal)
+
+var nome = prompt("Informe seu nome");
+   var informePeso = prompt("Informe seu peso");
+   var informeAltura = prompt("Informe sua altura");
+var imc = calcularImc(informePeso, informeAltura);
+   
+   alert(nome + "O seu IMC é: " + imc);
+
+   if (imc < 18.5) {
+
+         alert("Você está abaixo do recomendado");
+
+      }
+
+      if (imc > 35) {
+
+         alert("Você está acima do recomendado");
+      }
+
+      if (imc >= 18.5 && imc <= 35) {
+
+            alert("Seu IMC está excelente!");
+
+         }
+
+   
+
+   
+</script>
